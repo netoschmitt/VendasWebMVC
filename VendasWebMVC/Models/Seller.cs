@@ -1,9 +1,10 @@
-﻿using System;
+﻿using SalesWebMvc.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
-namespace SalesWebMvc.Models
+namespace VendasWebMVC.Models
 {
     public class Seller
     {

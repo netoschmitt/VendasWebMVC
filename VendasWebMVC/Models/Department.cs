@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SalesWebMvc.Models
+namespace VendasWebMVC.Models
 {
     public class Department
     {
