@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using SalesWebMvc.Models.Enums;
+using VendasWebMVC.Models;
 
 namespace VendasWebMVC.Data
 {
@@ -17,10 +19,10 @@ namespace VendasWebMVC.Data
         public void Seed()
         {
             if (_context.Department.Any() ||
-                _context.Seller.Any() ||
+                _context.Sellers.Any() ||
                 _context.SalesRecord.Any())
             {
-                return; // DB has been seeded
+                return; // DB has been seeded - o db ja foi populado
             }
 
             Department d1 = new Department(1, "Computers");
@@ -66,9 +68,10 @@ namespace VendasWebMVC.Data
             SalesRecord r29 = new SalesRecord(29, new DateTime(2018, 10, 23), 12000.0, SaleStatus.Billed, s5);
             SalesRecord r30 = new SalesRecord(30, new DateTime(2018, 10, 12), 5000.0, SaleStatus.Billed, s2);
 
+            // ef
             _context.Department.AddRange(d1, d2, d3, d4);
 
-            _context.Seller.AddRange(s1, s2, s3, s4, s5, s6);
+            _context.Sellers.AddRange(s1, s2, s3, s4, s5, s6);
 
             _context.SalesRecord.AddRange(
                 r1, r2, r3, r4, r5, r6, r7, r8, r9, r10,

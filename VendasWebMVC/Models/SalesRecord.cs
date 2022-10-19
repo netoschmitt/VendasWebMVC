@@ -3,7 +3,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using VendasWebMVC.Models;
 
-namespace SalesWebMvc.Models
+namespace VendasWebMVC.Models
 {
     public class SalesRecord
     {
